@@ -69,7 +69,7 @@ By combining speed metrics with **deep traffic inspection**, it uncovers how and
 
 **Aakanksha**  
 ECE Undergraduate | Interested in Deep Learning · Embedded Systems · Network Intelligence  
-📧 gupta.aakanksha2003 | 🌐 [[LinkedIn Profile]](https://www.linkedin.com/in/aakanksha-gupta-b32b9b24b/) 
+📧 gupta.aakanksha2003@gmail.com | 🌐 [[LinkedIn Profile]](https://www.linkedin.com/in/aakanksha-gupta-b32b9b24b/) 
 
 ---
 

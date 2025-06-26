@@ -31,19 +31,6 @@ This project presents a comparative analysis of **Wi-Fi vs. Cellular (4G/5G) net
 
 ---
 
-## 📊 Sample Visualizations
-
-<p align="center">
-  <img src="images/ping_variation.png" width="400"/>
-  <br>
-  <em>Ping variation across network types (Wi-Fi vs 4G)</em>
-</p>
-
-<p align="center">
-  <img src="images/jitter_plot.png" width="400"/>
-  <br>
-  <em>Jitter analysis from time-series logs</em>
-</p>
 
 ---
 

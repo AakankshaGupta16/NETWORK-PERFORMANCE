@@ -1,99 +1,88 @@
-# 🌐 Network Performance Monitoring using Wireshark & Python
+# 📡 Combined WiFi & Cellular Network Analysis
+This project analyzes **WiFi and Cellular networks** using:  
+- 📦 Packet-level traffic from Wireshark  
+- ⚡ Real-time internet speed tests with speedtest-cli  
+- 📊 Visualizations showing trends and performance distribution  
+All functionalities are implemented in **one Jupyter Notebook** for simplicity and reproducibility.
 
-A hybrid solution for **real-time network performance analysis**, comparing **Wi-Fi** and **Cellular (4G/5G)** connectivity. This project blends **active benchmarking** with **deep protocol-level inspection** to reveal how networks behave under real-world loads, handoffs, and instability.
+## 🔧 Technologies Used
+- Python: pandas, matplotlib, seaborn  
+- speedtest-cli: real-time speed measurement  
+- Wireshark: packet data capture  
+- Google Colab: execution environment
 
----
+## 📂 Repository Structure
+.
+├── images/
+│   ├── WifiPacketLengthVariation.png
+│   ├── CellularPacketLengthVariation.png
+│   ├── DownloadspeedWIFI.png
+│   ├── UploadSpeedWIFI.png
+│   ├── pingWIFI.png
+│   ├── networkSpeedPerformanceWIFI.png
+│   ├── pingPerformanceWIFI.png
+│   ├── DownloadspeedCellular.png
+│   ├── UploadSpeedCELLULAR.png
+│   ├── pingCELLULAR.png
+│   ├── networkSpeedPerformanceCELLULAR.png
+│   └── pingPerformanceCELLULAR.png
+├── Combined_Network_Analysis.ipynb
+├── wifi_data.csv
+├── cellular_data.csv
+├── network_speed_log.csv
+├── cellular_speed_log.csv
+└── README.md
 
-## 🚀 Key Features
+## 📶 WiFi Network Analysis
+### 📉 Packet Length Over Time  
+![WiFi Packet Length](images/WifiPacketLengthVariation.png)  
+### ⬇️ Download Speed  
+![WiFi Download Speed](images/DownloadspeedWIFI.png)  
+### ⬆️ Upload Speed  
+![WiFi Upload Speed](images/UploadSpeedWIFI.png)  
+### ⚡ Ping  
+![WiFi Ping](images/pingWIFI.png)  
+### 📦 Speed Performance Distribution  
+![WiFi Speed Performance](images/networkSpeedPerformanceWIFI.png)  
+### 📦 Ping Performance Distribution  
+![WiFi Ping Performance](images/pingPerformanceWIFI.png)  
 
-- ✅ **Active Speed Logging**  
-  Automates benchmarking of download/upload speeds and ping latency using `speedtest-cli` at regular intervals.
+## 📱 Cellular Network Analysis
+### 📉 Packet Length Over Time  
+![Cellular Packet Length](images/CellularPacketLengthVariation.png)  
+### ⬇️ Download Speed  
+![Cellular Download Speed](images/DownloadspeedCellular.png)  
+### ⬆️ Upload Speed  
+![Cellular Upload Speed](images/UploadSpeedCELLULAR.png)  
+### ⚡ Ping  
+![Cellular Ping](images/pingCELLULAR.png)  
+### 📦 Speed Performance Distribution  
+![Cellular Speed Performance](images/networkSpeedPerformanceCELLULAR.png)  
+### 📦 Ping Performance Distribution  
+![Cellular Ping Performance](images/pingPerformanceCELLULAR.png)  
 
-- ✅ **Packet-Level Analysis with Wireshark**  
-  Captures live traffic and analyzes key protocols including **TCP**, **TLS**, **SSDP**, and **MDNS** to detect:
-  - Packet drops  
-  - Latency spikes  
-  - Handoff delays  
+## 📝 How to Run
+1. Clone this repo or open it in Google Colab  
+2. Upload the required CSV files or generate them using the notebook  
+3. Install required packages:  
+pip install speedtest-cli pandas matplotlib seaborn  
+4. Run the Combined_Network_Analysis.ipynb notebook  
 
-- ✅ **Insightful Visualizations**  
-  Uses **Matplotlib** and **Pandas** (in **Google Colab**) to visualize:
-  - Bandwidth trends  
-  - Jitter and latency variability  
-  - Protocol anomalies and signal transitions  
+## 🚀 Features
+- 🔁 Automated speed tests with random intervals  
+- ⏱️ Download / Upload / Ping logging  
+- 📊 Packet-level time-series visualization  
+- 📦 Boxplots for performance comparison  
 
----
+## 📌 Potential Enhancements
+- Add protocol classification (DNS, TCP, UDP breakdown)  
+- Integrate anomaly detection with ML models  
+- Build a real-time dashboard (e.g., with Streamlit)  
 
-## 🛠️ Tools & Technologies
+## 👨‍💻 Author
+**Your Name**  
+Final Year ECE Student | Network Analyst | ML Explorer  
+📧 your.email@example.com  
 
-- Python  
-- Speedtest CLI  
-- Wireshark / Tshark  
-- Matplotlib & Pandas  
-- Google Colab  
-
----
-
-## 🔬 Real-World Application
-
-This project simulates conditions relevant to:
-
-- 🎮 Online Gaming  
-- 📹 Live Video Conferencing  
-- 📡 Mobile Data Handoffs  
-
-It helps **network engineers, researchers, and power users** understand how network behavior changes during load, noise, or mobility scenarios.
-
----
-
-## 📌 How to Run
-
-### 🧪 Active Performance Testing
-
-1. Clone this repository  
-2. Open the Jupyter or Colab notebook:  
-   [Open in Google Colab](https://colab.research.google.com/)
-3. Run the following commands to test your network:
-   ```bash
-   !pip install speedtest-cli
-   !speedtest-cli
-   ```
-
-### 📥 Protocol-Level Packet Analysis
-
-1. Use **Wireshark** to capture `.pcap` traffic logs while switching networks or performing tasks  
-2. Export packet logs to `.csv` using Wireshark **or** extract with `tshark`:
-   ```bash
-   tshark -r capture.pcap -T fields -e frame.time -e ip.src -e ip.dst -e tcp.len -E separator=, > output.csv
-   ```
-3. Load `.csv` into the notebook for visualization:
-   ```python
-   import pandas as pd
-   df = pd.read_csv('output.csv')
-   ```
-
----
-
-## 👩‍💻 Author
-
-**Aakanksha Gupta**  
-🎓 ECE Undergraduate | 💡 Passionate about Deep Learning, Embedded Systems, and Network Intelligence  
-📧 [gupta.aakanksha2003@gmail.com](mailto:gupta.aakanksha2003@gmail.com)  
-🔗 [LinkedIn](https://www.linkedin.com/in/aakanksha-gupta-b32b9b24b/)
-
----
-
-## 🤝 Contributing
-
-Contributions, bug reports, and feature suggestions are welcome!
-
-1. Fork the repository  
-2. Open the notebook in Colab or Jupyter  
-3. Make changes and save to your fork  
-4. Open a pull request  
-
----
-
-## 📝 License
-
-This project is open-sourced under the **MIT License** for academic and research use.  
-See the [`LICENSE`](LICENSE) file for details.
+## 📜 License
+MIT License — use it freely for academic, personal, or professional projects.

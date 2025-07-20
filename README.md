@@ -79,7 +79,7 @@ pip install speedtest-cli pandas matplotlib seaborn
 - Build a real-time dashboard (e.g., with Streamlit)  
 
 ## 👨‍💻 Author
-**YAakanksha Gupta**  
+**Aakanksha Gupta**  
 Final Year ECE Student 
 📧 gupta.aakanksha2003@gmail.com
 

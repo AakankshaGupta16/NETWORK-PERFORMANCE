@@ -27,11 +27,9 @@ All functionalities are implemented in **one Jupyter Notebook** for simplicity a
 │   ├── pingCELLULAR.png
 │   ├── networkSpeedPerformanceCELLULAR.png
 │   └── pingPerformanceCELLULAR.png
-├── Combined_Network_Analysis.ipynb
+├── Untitled0.ipynb
 ├── wifi_data.csv
 ├── cellular_data.csv
-├── network_speed_log.csv
-├── cellular_speed_log.csv
 └── README.md
 ```
 ## 📶 WiFi Network Analysis

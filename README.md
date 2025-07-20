@@ -35,31 +35,31 @@ All functionalities are implemented in **one Jupyter Notebook** for simplicity a
 
 ## 📶 WiFi Network Analysis
 ### 📉 Packet Length Over Time  
-![WiFi Packet Length](images/WifiPacketLengthVariation.png)  
+![WiFi Packet Length](imagefile/WifiPacketLengthVariation.png)  
 ### ⬇️ Download Speed  
-![WiFi Download Speed](images/DownloadspeedWIFI.png)  
+![WiFi Download Speed](imagefile/DownloadspeedWIFI.png)  
 ### ⬆️ Upload Speed  
-![WiFi Upload Speed](images/UploadSpeedWIFI.png)  
+![WiFi Upload Speed](imagefile/UploadSpeedWIFI.png)  
 ### ⚡ Ping  
-![WiFi Ping](images/pingWIFI.png)  
+![WiFi Ping](imagefile/pingWIFI.png)  
 ### 📦 Speed Performance Distribution  
-![WiFi Speed Performance](images/networkSpeedPerformanceWIFI.png)  
+![WiFi Speed Performance](imagefile/networkSpeedPerformanceWIFI.png)  
 ### 📦 Ping Performance Distribution  
-![WiFi Ping Performance](images/pingPerformanceWIFI.png)  
+![WiFi Ping Performance](imagefile/pingPerformanceWIFI.png)  
 
 ## 📱 Cellular Network Analysis
 ### 📉 Packet Length Over Time  
-![Cellular Packet Length](images/CellularPacketLengthVariation.png)  
+![Cellular Packet Length](imagefile/CellularPacketLengthVariation.png)  
 ### ⬇️ Download Speed  
-![Cellular Download Speed](images/DownloadspeedCellular.png)  
+![Cellular Download Speed](imagefile/DownloadspeedCellular.png)  
 ### ⬆️ Upload Speed  
-![Cellular Upload Speed](images/UploadSpeedCELLULAR.png)  
+![Cellular Upload Speed](imagefile/UploadSpeedCELLULAR.png)  
 ### ⚡ Ping  
-![Cellular Ping](images/pingCELLULAR.png)  
+![Cellular Ping](imagefile/pingCELLULAR.png)  
 ### 📦 Speed Performance Distribution  
-![Cellular Speed Performance](images/networkSpeedPerformanceCELLULAR.png)  
+![Cellular Speed Performance](imagefile/networkSpeedPerformanceCELLULAR.png)  
 ### 📦 Ping Performance Distribution  
-![Cellular Ping Performance](images/pingPerformanceCELLULAR.png)  
+![Cellular Ping Performance](imagefile/pingPerformanceCELLULAR.png)  
 
 ## 📝 How to Run
 1. Clone this repo or open it in Google Colab  

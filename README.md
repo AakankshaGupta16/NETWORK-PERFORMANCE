@@ -13,6 +13,7 @@ All functionalities are implemented in **one Jupyter Notebook** for simplicity a
 
 ## 📂 Repository Structure
 .
+```
 ├── images/
 │   ├── WifiPacketLengthVariation.png
 │   ├── CellularPacketLengthVariation.png
@@ -32,7 +33,7 @@ All functionalities are implemented in **one Jupyter Notebook** for simplicity a
 ├── network_speed_log.csv
 ├── cellular_speed_log.csv
 └── README.md
-
+```
 ## 📶 WiFi Network Analysis
 ### 📉 Packet Length Over Time  
 ![WiFi Packet Length](imagefile/WifiPacketLengthVariation.png)  
